@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
+    public GameObject normalEffect, goodEffect, perfectEffect, missEffect;
+    
     public bool canBePressed;
 
     public KeyCode keyToPress;
@@ -27,10 +29,25 @@ public class NoteObject : MonoBehaviour
 
                 //点击成功
                 //GameManager.instance.NoteHit();
-                if (transform.position.y > 0.25)
+                if (Mathf.Abs(transform.position.y) > 0.25)
                 {
-                    
+                    Debug.Log("Normal");
+                    GameManager.instance.NormalHit();
+                    Instantiate(normalEffect, transform.position, normalEffect.transform.rotation);
                 }
+                else if(Mathf.Abs(transform.position.y) > 0.05)
+                {
+                    Debug.Log("Good");
+                    GameManager.instance.GoodHit();
+                    Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
+                }
+                else
+                {
+                    Debug.Log("Perfect");
+                    GameManager.instance.PerfectHit();
+                    Instantiate(perfectEffect, transform.position, perfectEffect.transform.rotation);
+                }
+                
             }
         }
     }
@@ -53,6 +70,7 @@ public class NoteObject : MonoBehaviour
             
             //失败
             GameManager.instance.NoteMissed();
+            Instantiate(missEffect, transform.position, missEffect.transform.rotation);
             
         }
     }
