@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7487566343790669600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7487566343790669614}
+  - component: {fileID: 7487566343790669615}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7487566343790669614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7487566343790669600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7487566343790669615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7487566343790669600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af321cb5b5e86164e9e8b92d142e9f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BG
+    clip: {fileID: 8300000, guid: 50a782afce671804386909436917d6a5, type: 3}
+    volume: 0.568
+    pitch: 1.25
+    loop: 1
+  - name: FootStep
+    clip: {fileID: 8300000, guid: 81f3f050f1628844ebdb674f1d7d12e4, type: 3}
+    volume: 0.49
+    pitch: 0.87
+    loop: 0
+  - name: BreatheIn
+    clip: {fileID: 8300000, guid: 4a51a0e2432464c4086ebab51c229808, type: 3}
+    volume: 0.631
+    pitch: 1
+    loop: 0
+  - name: BreatheOut
+    clip: {fileID: 8300000, guid: 5bf2f48be2952c34dbdc9334e29d1e89, type: 3}
+    volume: 0.637
+    pitch: 1
+    loop: 0

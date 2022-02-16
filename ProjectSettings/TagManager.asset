@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Activator
+  - Trigger
+  - FootStep
   layers:
   - Default
   - TransparentFX
